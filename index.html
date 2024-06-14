@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Style for the lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(8, 8, 8, 0.8);
+            z-index: 9999;
+        }
+        
+        .lightbox img {
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: rgb(50, 215, 237);
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="side-nav">
+            <div class="brand-title">Land space</div>
+            <div class="subtitle">Photography</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#responses" class="nav-link">Responses</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section id="home">
+                <h1>Welcome to My Photography Portfolio</h1>
+                <img src="C:\Users\Pavan\Downloads\1640184.jpg" alt="Photography" class="home-image">
+            </section>
+            <section id="portfolio">
+                <h1>Portfolio</h1>
+                <div class="grid">
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\squirrel-8769460_1280.webp" alt="Bird" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\butterfly-5546907_1280.jpg" alt="Photo 2" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\flowers-7130678_1280.jpg" alt="Photo 3" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\idol-1834688_1280.jpg" alt="Photo 4" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\simba-8618301_1280.webp" alt="Photo 5" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\water-2943518_1280.jpg" alt="Photo 6" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\photographer-6780689_1280.jpg" alt="Photo 7" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\baked-goods-1846460_1280.jpg" alt="Photo 8" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\istockphoto-1534040386-1024x1024.jpg" alt="Photo 9" onclick="openLightbox(this.src)"></div>
+                    <div class="grid-item"><img src="C:\Users\Pavan\Downloads\bear-1283347_1280.jpg" alt="Photo 10" onclick="openLightbox(this.src)"></div>
+
+
+
+                    <!-- Add onclick attribute to openLightbox function with image source -->
+                    <!-- Add same onclick attribute to other images -->
+                    <!-- Add more images here -->
+                </div>
+            </section>
+            <section id="about">
+                <h1>About</h1>
+                <p>Hello! At Land Spaces Photography, we believe that every landscape has a story to tell, and it's our mission to bring these stories to life with authenticity and creativity.Our team of dedicated photographers combines technical expertise with artistic vision to produce images that not only capture the essence of a place but also evoke a sense of wonder and reverence. we seek to inspire a deeper connection to the natural world through our work.</p>
+            </section>
+            <section id="responses">
+                <h1>Our Responses</h1>
+                <div class="client">
+                    <h2>Response 1</h2>
+                    <p>Land Space Photography exceeded my expectations with their stunning compositions and attention to detail.</p>
+                </div>
+                <div class="client">
+                    <h2>Response 2</h2>
+                    <p>The photos provided by Land Space Photography truly encapsulated the beauty of the landscapes, evoking a sense of wonder and awe.</p>
+                </div>
+                <div class="client">
+                    <h2>Response 3</h2>
+                    <p>The images produced by Land Space Photography are not just photos; they're works of art that we'll cherish for years to come.</p>
+                </div>
+                <div class="client">
+                    <h2>Response 4</h2>
+                    <p>Land Space Photography's talent for capturing natural beauty is unparalleled; their photographs transport you to another world.</p>
+                </div>
+                <div class="client">
+                    <h2>Response 5</h2>
+                    <p>Land Space Photography's professionalism and creativity shone through in every shot they delivered.</p>
+                </div>
+            </section>
+
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+                <p>If you have any questions or would like to schedule a session, please feel free to reach out to me:</p>
+                <p>Email: <a href="ramyamadhurikota@gmail.com">ramyamadhurikota@gmail.com</a></p>
+                <p>Phone: <a href="tel:+9030348657">+9030348657/a></p>
+                <p>Follow me on social media:</p>
+                <p>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </p>
+
+            </section>
+        </div>
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span> <!-- Close button -->
+        <img id="lightbox-image" src="" alt="lightbox image">
+    </div>
+
+    <script>
+        // JavaScript functions to handle opening and closing of the lightbox
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox-image').src = imageSrc; // Set image source
+            document.getElementById('lightbox').style.display = 'block'; // Show lightbox
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none'; // Hide lightbox
+        }
+    </script>
+</body>
+</html>
